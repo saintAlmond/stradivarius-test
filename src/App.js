@@ -1,23 +1,30 @@
 import React from 'react';
+import styled, { css } from 'styled-components';
+import { 
+  CarrouselProvider, 
+  Slider, 
+  Slide,
+  ButtonNext,
+  ButtonBack,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+// import Carrousel from './components/Carrousel';
+
+const PageContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  `
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PageContainer className="App">
+      <SliderWrapper>
+        
+      </SliderWrapper>
+    </PageContainer>
   );
 }
 
